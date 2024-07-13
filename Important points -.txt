@@ -1,4 +1,0 @@
-Important points -
-
-1) SVG Icons site - icons.getbootstrap.com
-2) SSH trust command code : ssh-keygen -t ed25519 -C "email address"
