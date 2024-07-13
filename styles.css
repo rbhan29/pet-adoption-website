@@ -1,0 +1,271 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body{
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.Top-Section-Wrapper{
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #001D37;
+}
+
+.Top-content{
+    position: relative;
+    z-index: 2;
+}
+
+.Top-Section{
+    background-color: #001D37;
+    color: white;
+    padding-top: 139px;
+    padding-bottom: 139px;
+    max-width: 1066px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.Top-Section h1{
+    font-size: 6.25rem;
+    margin : 0;
+    line-height: 97.3%;
+    max-width: 525px;
+}
+
+.intro-text{
+    font-size: 1.25rem;
+    line-height: 169.3%;
+    margin: 1rem 0;
+    max-width: 435px;
+}
+
+.intro-btns{
+    margin-bottom: 129px
+}
+
+.View-btn{
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: #475AFF;
+    border: 2px solid #475AFF;
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 1000px;
+    transition: all 0.3s ease-out;
+}
+
+.View-btn:hover{
+    background-color: #2432B0;
+    border: 2px solid #2432B0;
+}
+
+.Manage-btn{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.Manage-btn:hover{
+    background-color: white;
+    border: 2px solid white;
+    color: #2432B0;
+}
+
+.margin-rt{
+    margin-right: 10px;
+}
+
+.intro-feature{
+    padding: 33px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.intro-feature p{
+    margin: 0;
+    font-size: 1.0625rem;
+}
+
+.intro-feature h2{
+    font-size: 1.5rem;
+    margin: 40px 0 3px 0;
+}
+
+.intro-features{
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+}
+
+@media screen and (min-width: 450px){
+    .intro-features{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .intro-features{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.circle1{
+    width: 617px;
+    height: 617px;
+    background: #D660FF;
+    opacity : 0.85;
+    border-radius: 50%;
+    filter: blur(150px);
+    position: absolute;
+    top: 62px;
+    right: -412px;
+}
+
+.circle2{
+    width: 617px;
+    height: 617px;
+    background: #6079FF;
+    opacity : 0.85;
+    border-radius: 50%;
+    filter: blur(150px);
+    position: absolute;
+    top: -359px;
+    left: -122px;
+}
+
+.page-section{
+    background-color: white;
+    padding: 140px 16px;
+}
+
+.page-section-inner{
+    max-width: 1066px;
+    margin: 0 auto;
+}
+
+.Page-title{
+    font-size: 5.3125rem;
+    margin: 0;
+    line-height: 97.3%;
+}
+
+.petfilter{
+    color: #9F9F9F;
+    font-size: 1.375rem;
+}
+
+.petfilter button{
+    background-color: transparent;
+    border: none;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.375rem;
+    color: #9F9F9F;
+}
+
+.sitefooter{
+    color: #A6A6A6;
+    text-align: center;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0 0 65px 0;
+}
+
+.listofpets{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    column-gap: 34px;
+    row-gap: 28px;
+}
+
+.pet-card{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    border-radius: 20px;
+    border: 1px solid #f3f3f3;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.08);
+}
+
+.pet-card-photo{
+    order: 1;
+    grid-row: 1;
+}
+
+.pet-card-photo img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.pet-text{
+    padding: 21px 29px;
+}
+
+.pet-text h3{
+    margin: 0 0 5px 0;
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+
+.description{
+    margin: 0 0 1rem 0;
+    color: #626262;
+    line-height: 150%;
+}
+
+.age{
+    margin: 0;
+    color: #a2a2a2;
+    font-size: 0.85rem;
+    line-height: 150%;
+
+}
+
+@media screen and (max-width: 400px){
+    .Top-Section h1{
+        font-size: 4rem;
+    }
+
+    .Top-Section{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .intro-btns{
+        margin-bottom: 65px
+    }
+
+    .page-section{
+        padding: 65px 16px;
+    }
+
+    .Page-title{
+        font-size: 4rem;
+    }
+
+    .petfilter{
+        font-size: 1.1rem;
+    }
+    
+    .petfilter button{
+        font-size: 1.1rem;
+    }
+
+    .listofpets{
+        row-gap: 16px;
+    }
+
+    .pet-text{
+        padding: 18px 16px;
+    }
+
+    .description{
+        font-size: 0.9rem;
+    }
+}
